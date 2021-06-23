@@ -42,7 +42,7 @@ jobs:
     
     - name: Test with unittest
       run: |
-        python -m unittest discover
+        python -m unittest --verbose --failfast
 # Build and push the Docker image
   push_to_registry:
     name: Build and push Docker image to Docker Hub
